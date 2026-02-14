@@ -7,7 +7,46 @@
 <style>
   body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 100vh;<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="gift-box" onclick="openBox()">
+        <div class="lid"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="surprise" id="surprise">
+        <div class="flower">
+    🌹<br>
+    🌹🌹<br>
+    💐
+</div>
+
+        <h2 id="titleText">Happy Valentine’s Day 💖</h2>
+<p id="messageText">
+    วันนี้เธอไม่ว่างเลยทำเว็บมาให้😜 ✨
+</p>
+
+        
+        <button class="next-btn" onclick="nextMessage()">ถัดไป 💌</button>
+    </div>
+</div>
+
+<!-- เพลง -->
+<audio id="bgMusic" src="music.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
+
   background: #f8efe6;
   background-image: radial-gradient(#f3b5c8 1px, transparent 1px);
   background-size: 18px 18px;
@@ -143,3 +182,4 @@
 
 </body>
 </html>
+
